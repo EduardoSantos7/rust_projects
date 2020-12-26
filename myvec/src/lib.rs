@@ -76,9 +76,7 @@ impl<T> MyVec<T> {
         if index >= self.len {
             return None;
         }
-        Some(unsafe {
-            &*self.ptr.as_ptr().add(index)
-        })
+        Some(unsafe { &*self.ptr.as_ptr().add(index) })
     }
 }
 
