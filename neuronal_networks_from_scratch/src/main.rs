@@ -1,5 +1,6 @@
 use ndarray::arr1;
 use ndarray::arr2;
+mod DenseLayer;
 
 fn simplier_dot() {
     let inputs = arr1(&[1.0, 2.0, 3.0, 2.5]);
@@ -40,4 +41,6 @@ fn main() {
 
     println!("{:?}", layer_outputs);
     simplier_dot();
+
+    let layer_1 = DenseLayer::new(4, 5);
 }
