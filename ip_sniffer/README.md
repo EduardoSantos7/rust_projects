@@ -19,7 +19,7 @@ The app could recive the next parameters:
 
 **Note:** *If the param `-j` is not recived the app will use 4 as default.*
 
-Each thread will scan a port in a range of `0` to `65535`. The scan process consist in create a TcpStream to connect to a port, if the connection succed then it will print a `.` and return the port number.
+Each thread will scan a port in a range of `0` to `65535`. The scan process consists of creating a TcpStream to connect to a port; if the connection succeeds, then it will print a `.` and return the port number.
 
 
 
