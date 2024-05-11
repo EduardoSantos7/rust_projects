@@ -26,7 +26,7 @@ async fn reader() {
     log::info!("Reading {} bytes", contents.len());
 
     tokio::task::spawn_blocking(move || {
-        fib(40);
+        fib(45);
     }).await.unwrap();
 
 }
@@ -44,7 +44,7 @@ fn reader_sync() {
     f.read_to_string(&mut contents).unwrap();
     log::info!("Reading {} bytes", contents.len());
 
-    fib(40);
+    fib(45);
 }
 
 async fn run_async() {
