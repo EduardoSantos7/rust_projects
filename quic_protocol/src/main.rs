@@ -68,6 +68,7 @@ pub fn make_server_endpoint(
 /// ## Args
 ///
 /// - server_certs: a list of trusted certificates in DER format.
+/// 
 fn configure_client(
     server_certs: &[&[u8]],
 ) -> Result<ClientConfig, Box<dyn Error + Send + Sync + 'static>> {
