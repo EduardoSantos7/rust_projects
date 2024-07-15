@@ -1,0 +1,9 @@
+[package]
+name = "tokio_basics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+log = "0.4.14"
+simple_logger = "5.0.0"
